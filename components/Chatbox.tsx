@@ -145,7 +145,7 @@ export default function Chatbox() {
               className="flex-1 rounded-lg border border-gray-300 dark:border-gray-700 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
               disabled={step > 2 && !chatStarted}
             />
-            <Button onClick={handleSend} disabled={!input.trim()}>
+            <Button onClick={handleSend} disabled={!input.trim()} className="text-gray-900 dark:text-white">
               {chatStarted ? "Send" : "Next"}
             </Button>
 
